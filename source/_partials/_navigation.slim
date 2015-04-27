@@ -1,0 +1,19 @@
+nav.navbar.navbar-default
+  .container-fluid
+    .navbar-header
+      button.navbar-toggle data-target="#primary-navigation" data-toggle="collapse" type="button"
+        span.sr-only
+          | Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand href="#{site_url}" title="#{site_title}" #{site_title}
+
+    .collapse.navbar-collapse#primary-navigation
+      ul.nav.navbar-nav
+        =nav_li "News", "News"
+        =nav_li "Vision", "Vision"
+        =nav_li "Philosophy", "Philosophy"
+        =nav_li "Company", "Company"
+        =nav_li "Recruit", "Recruit"
+        =nav_li "Contact", "Contact"
